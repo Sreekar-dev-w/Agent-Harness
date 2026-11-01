@@ -1,0 +1,59 @@
+
+{
+  "benchmark": "LOCALPILOT-CODE-EVAL-001",
+  "version": "1.0.0",
+  "tasks": [
+    {
+      "id": "LP-C001",
+      "category": "code_generation",
+      "prompt": "Write a Python function is_prime(n). Handle negative numbers, zero, one, two, even numbers and odd numbers.",
+      "expected_behaviour": [
+        "Returns false for n < 2",
+        "Returns true for 2",
+        "Correctly identifies prime and composite integers"
+      ]
+    },
+    {
+      "id": "LP-C002",
+      "category": "debugging",
+      "prompt": "Debug this function: def average(nums): return sum(nums) / len(nums). Handle empty input appropriately.",
+      "expected_behaviour": [
+        "Identifies division by zero for empty input",
+        "Provides a clearly defined empty-input policy",
+        "Preserves correct average calculation"
+      ]
+    },
+    {
+      "id": "LP-C003",
+      "category": "code_generation",
+      "prompt": "Implement factorial(n) iteratively. Reject negative integers and non-integer inputs.",
+      "expected_behaviour": [
+        "factorial(0) returns 1",
+        "factorial(5) returns 120",
+        "Rejects negative and non-integer inputs"
+      ]
+    },
+    {
+      "id": "LP-C004",
+      "category": "code_understanding",
+      "prompt": "Implement binary search on a sorted list. Explain time and space complexity.",
+      "expected_behaviour": [
+        "Correctly finds existing elements",
+        "Returns -1 when target is absent",
+        "Time complexity O(log n)",
+        "Iterative auxiliary space O(1)"
+      ]
+    },
+    {
+      "id": "LP-C005",
+      "category": "test_generation",
+      "prompt": "Generate independent pytest tests for src.utils.reverse_string(s). Do not implement the function. Cover empty strings, single characters, spaces and Unicode.",
+      "expected_behaviour": [
+        "Imports the implementation",
+        "Tests all requested cases",
+        "Uses correct expected outputs"
+      ]
+    }
+  ]
+}
+
